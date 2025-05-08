@@ -1,0 +1,51 @@
+.stats-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #2c7df7, #ffffff);
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+}
+
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #356ea7;
+  /* Styles for the wrapper */
+}
+
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; /* espacio entre logos */
+  margin-bottom: 1rem;
+  /* Styles for the logo container */
+}
+
+.logo-img {
+  height: 40px;
+  object-fit: contain;
+  /* Styles for the first logo */
+}
+
+.logo-juego {
+  height: 150px;
+  object-fit: contain;
+  border-radius: 50%;
+  /* Styles for the second logo */
+}
+
+
+.login-card {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #f8f9fa; /* Example: light background */
+  color: white;
+  /* Styles for the card */
+}

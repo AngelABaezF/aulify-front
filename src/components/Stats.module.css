@@ -1,0 +1,273 @@
+.statsContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #9ab0d1, #42a5f5);
+  background-attachment: fixed;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  overflow-y: auto;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100px;
+  background-color: #2d68c2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+  z-index: 10;
+}
+
+.topIcons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  background-color: #1565c0;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  background-color: #1e88e5;
+}
+
+.icon.active {
+  background-color: #1e88e5;
+}
+
+.main {
+  margin-left: 120px;
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.topBar {
+  width: 1280px;
+  background-color: rgba(13, 71, 161, 0.85);
+  padding: 1rem; 
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 3000px;
+  min-width: none;
+  margin: 0 auto; 
+}
+
+.topBar h1 {
+  color: #ffffff;
+  font-size: 2rem;
+  margin: 0;
+  text-align: center; 
+  width: 100%; 
+}
+
+.cardsSection {
+  width: 100%;
+  padding: 2rem;
+}
+
+.generalStats {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.statCard {
+  background: linear-gradient(135deg, #1565c0, #1e88e5);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.statCard:hover {
+  transform: scale(1.05);
+}
+
+.statCard h3 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: #ffffff;
+}
+
+.statCard p {
+  font-size: 1.1rem;
+  color: #e3f2fd;
+}
+
+.searchSection {
+  width: 1280px;
+  margin: 0 auto; 
+  flex: 0.5;
+  max-width: 1500px;
+  padding: 1rem; 
+  gap: 1rem; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #1e88e5, #42a5f5);
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.searchInput {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: #000000;
+  background-color: #e3f2fd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.searchInput::placeholder {
+  color: #90caf9;
+}
+
+.searchButton {
+  background-color: #0d47a1;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 0;
+}
+
+.searchButton:hover {
+  background-color: #1565c0;
+}
+
+.skinPreviewCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #1565c0, #1e88e5);
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.skinPreviewCard img {
+  width: 80%; 
+  max-width: 200px; 
+  border-radius: 10px;
+}
+
+.searchRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  gap: 1rem; 
+  flex-wrap: nowrap; 
+}
+
+.searchLabel {
+  flex: 1; 
+  text-align: left;
+  white-space: nowrap; 
+}
+
+.searchInput {
+  flex: 2; 
+  max-width: 400px; 
+}
+
+.searchButton {
+  flex: 0; 
+  margin: 0; 
+}
+
+.contentLayout {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.5rem; 
+  text-align: left;
+}
+
+/* Nuevos estilos para las tarjetas de nivel */
+.levelSectionTitle {
+  width: 1280px;
+  margin: 2rem auto 1rem;
+  font-size: 1.8rem;
+  color: #ffffff;
+  background-color: rgba(13, 71, 161, 0.85);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.levelStatsSection {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.levelStatsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.levelCardGroup {
+  background: rgba(30, 136, 229, 0.2);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  width: 100%;
+}
+
+.levelHeader {
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 0.75rem;
+}
+
+.levelHeader h2 {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.levelCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
